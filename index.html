@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название сайта</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/itc-slider.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo">Михайловское Подворье<span></span></a>
+                
+                
+                <h3><i class="fas fa-phone contact-icon"></i>8(921)133-13-51</h3>
+               
+                <nav class="nav">
+                    
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">Услуги</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
+                       <!-- <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>-->
+                        <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button id="menu-btn" class="menu-toggle" aria-label="Меню">
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                </button>
+                 <nav id="burger-menu" style="left: -300px">
+                 <a href="#">Главная</a>
+                 <a href="#menu">Услуги</a>
+                 <a href="#about">О нас</a>
+                 <a href="#contacts">Контакты</a>
+                 <button id="btn-close" class="btn">X</button>
+                 </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">Михайловское Подворье</h1>
+                <p class="hero__subtitle">комплекс придорожного сервиса</p>
+                <div class="hero__buttons">
+                    <a href="#menu" class="btn btn--primary">Услуги</a>
+                    <a href="#contact-us-all" class="btn btn--outline">Бронирование</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about__inner">
+                    <div class="about__image">
+                        <img src="images/about.jpg" alt="">
+                    </div>
+                    <div class="about__content">
+                        <h2 class="section-title">О нас</h2>
+                        <p class="about__text">Придорожный комплекс «Михайловское Подворье» это — ресторан и банкетный зал до 150 чел, кафе с разнообразной кухней, гостиница с 2х и 3х-местными номерами, охраняемая парковка для грузового и легкового автотранспорта, русская баня на дровах, душ, прачечная, шиномонтаж и магазин автозапчастей.</p>
+                        <p class="about__text">Ждем вас в гости!</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2 class="section-title">Наши услуги</h2>
+                <div class="menu__content active" id="coffee">
+                    <div class="menu__grid">
+
+                        <figure class="menu-item">
+                          <div class="usluga_name">
+                           <span><h3>Гостиница</h3></span>
+                          </div>
+                          <img src="images/services/hostel.jpg" alt="">
+                          <figcaption>
+                          <p>Уютный и комфортабельный мотель с 11-ю номерами.</p>
+                          </figcaption>
+                        </figure>
+
+                         <figure class="menu-item">
+                          <div class="usluga_name">
+                           <span><h3>Трактир-бистро</h3></span>
+                          </div>
+                          <img src="images/services/traktir.jpg" alt="">
+                          <figcaption>
+                          <p>Большое разнообразие блюд русской и восточной кухни. Каждый посетитель найдет блюдо на свой вкус!</p>
+                          </figcaption>
+                        </figure>
+
+                        <figure class="menu-item">
+                          <div class="usluga_name">
+                           <span><h3>Банкетный зал</h3></span>
+                          </div>
+                          <img src="images/services/banket.jpg" alt="">
+                          <figcaption>
+                          <p>Банкетный зал вместимостью 100 человек и vip-зоной с бильярдом.</p>
+                          </figcaption>
+                        </figure>
+
+                        <figure class="menu-item">
+                          <div class="usluga_name">
+                           <span><h3>Русская банька</h3></span>
+                          </div>
+                          <img src="images/services/banja.JPG" alt="">
+                          <figcaption>
+                          <p>Мы рады предложить нашим гостям настоящую русскую баню на дровах!</p>
+                          </figcaption>
+                        </figure>
+
+                        <figure class="menu-item">
+                          <div class="usluga_name">
+                           <span><h3>Парковка</h3></span>
+                          </div>
+                          <img src="images/services/parking.jpg" alt="">
+                          <figcaption>
+                          <p>Просторная освещаемая парковка с круглосуточной охраной на 50 парковочных мест.</p>
+                          </figcaption>
+                        </figure>
+ 
+                         <figure class="menu-item">
+                          <div class="usluga_name">
+                           <span><h3>Автозапчасти</h3></span>
+                          </div>
+                          <img src="images/services/shop.jpg" alt="">
+                          <figcaption>
+                          <p>На территории нашего комплекса есть магазин автозапчастей и шиномонтаж.</p>
+                          </figcaption>
+                        </figure>
+                    </div>
+                </div>
+             <p class="priziv">Просто позвоните нам и мы ответим на все ваши вопросы: 8(921)-133-13-51</p>
+            </div>
+        </section>
+
+         <section id="contact-us-all" class="contact-us">
+            <h2 id="contact-us" class="section-title">Связаться с нами</h2>
+            <form action="" class="contact-form">
+                <div class="contact-form-fields">
+                    <input type="text" placeholder="Имя*" required>
+                    <input type="text" placeholder="Фамилия*" required>
+                    <input type="tel" placeholder="Телефон">
+                    <input type="email" placeholder="Адрес электронной почты*" required>
+                </div>
+                <textarea name="" id="" placeholder="Сообщение*" required></textarea>
+                <button class="btn btn--primary">Отправить</button>
+            </form>
+        </section>
+
+<div class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="4000">
+  <div class="itc-slider-wrapper">
+    <div class="itc-slider-items">
+      <div class="itc-slider-item">
+        <img src="images/slider/img-1.jpg" alt="">
+      </div>
+      <div class="itc-slider-item">
+       <img src="images/slider/img-2.jpg" alt="">
+      </div>
+      <div class="itc-slider-item">
+        <img src="images/slider/img-3.jpg" alt="">
+      </div>
+      <div class="itc-slider-item">
+        <img src="images/slider/img-4.jpg" alt="">
+      </div>
+      <div class="itc-slider-item">
+        <img src="images/slider/img-5.jpg" alt="">
+      </div>
+      <div class="itc-slider-item">
+        <img src="images/slider/img-6.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+  <button class="itc-slider-btn itc-slider-btn-prev"></button>
+  <button class="itc-slider-btn itc-slider-btn-next"></button>
+</div>
+<!--Отзывы
+
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <h2 class="section-title">Отзывы</h2>
+                
+
+                <div class="reviews__slider">
+
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Текст отзыва</p>
+                        <div class="review__author">
+                            <img src="Вставьте фото" alt=""
+                                class="review__photo">
+                            <span class="review__name">Имя</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Текст отзыва</p>
+                        <div class="review__author">
+                            <img src="Вставьте фото" alt=""
+                                class="review__photo">
+                            <span class="review__name">Имя</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Текст отзыва</p>
+                        <div class="review__author">
+                            <img src="Вставьте фото" alt=""
+                                class="review__photo">
+                            <span class="review__name">Имя</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__info">
+                        <h2 class="section-title">Контакты</h2>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span>Адрес: 78-й километр трассы А-114 (Вологда - Новая Ладога), Шекснинский район, Вологодская область</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span>Телефон: 8(921)133-13-53</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>Email: mihpod78@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock contact-icon"></i>
+                            <span>Часы работы: круглосуточно без выходных</span>
+                        </div>
+                        <div class="social-links">
+                           <!-- <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>-->
+                            <p>Мы ВКонтакте</p>
+                            <a href="https://vk.com/podvorie35" class="social-link" aria-label="Vkontakte"><i class="fab fa-vk" target="_blank"></i></a>
+                        </div>
+                    </div>
+                    <div class="contacts__map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2042.3694638010077!2d38.601945976960266!3d59.20983897455666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ae5446c8ee62d1%3A0xf1b7820857e990bb!2z0JzQuNGF0LDQudC70L7QstGB0LrQvtC1INCf0L7QtNCy0L7RgNGM0LU!5e0!3m2!1sru!2sru!4v1752259938514!5m2!1sru!2sru"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <a href="#" class="logo">Михайловское Подворье<span></span></a>
+                    <p class="footer__text">комплекс придорожного сервиса</p>
+                    <br>
+                    <p class="footer__text">Тел.: 8(921)133-13-51</p>
+                    <br>
+                    <a href="https://yandex.ru/maps/org/mikhaylovskoye_podvorye/49028970468/reviews/?ll=38.679031%2C59.235779&tab=reviews&z=11.8" class="footer__link" target="_blank">Отзывы о нас на сервисе Яндекс Карты</a>
+                </div>
+                <img src="images/logo.png" alt="">
+                <div class="footer__nav">
+                    <h3 class="footer__title">Навигация</h3>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Главная</a></li>
+                        <li><a href="#menu" class="footer__link">Услуги</a></li>
+                        <li><a href="#about" class="footer__link">О нас</a></li>
+                        <li><a href="#contacts" class="footer__link">Контакты</a></li>
+                    </ul>
+                </div>
+               
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/itc-slider.js" defer></script>
+     <script src="js/toggle.js"></script>
+
+</body>
+
+</html>
