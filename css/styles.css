@@ -722,6 +722,14 @@ ul {
     .about__image {
         order: -1;
     }
+
+    .header a {
+       font-size: 0.8rem; 
+    }
+
+    .header h3{
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -825,4 +833,9 @@ ul {
     .header h3{
         display: none;
     }
+
+    .footer__inner, .footer__logo, .footer__nav{
+        justify-items: center;
+    }
+
 }
